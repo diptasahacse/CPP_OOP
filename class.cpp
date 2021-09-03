@@ -17,12 +17,17 @@ public:
         cout << "ID = " << id << ",\nAGE = " << age <<", \nCGPA = " << cgpa <<endl<<endl;
 
     }
+    Student(){
+        cout << "This is default Constructor" <<endl << endl;
+
+    }
 
 
 
 };
 
 int main(){
+    Student def; // initialize obj for default constructor
     //dipta details
     cout << "Dipta Details:" <<endl;
     Student dipta(11712644,27,2.5);
