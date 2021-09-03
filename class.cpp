@@ -7,6 +7,10 @@ public:
     int id;
     int age;
     double cgpa;
+    void display(){
+        cout << "ID = " << id << ",\nAGE = " << age <<", \nCGPA = " << cgpa <<endl<<endl;
+
+    }
 
 
 
@@ -19,13 +23,13 @@ int main(){
     dipta.age = 27;
     dipta.cgpa = 2.5;
     dipta.id = 11712644;
-    cout << "ID = " << dipta.id << ",\nAGE = " << dipta.age <<", \nCGPA = " << dipta.cgpa <<endl<<endl;
+    dipta.display();
     //keya details
     cout << "Keya Details:" << endl;
     keya.age = 23;
     keya.cgpa = 3.5;
     keya.id = 446655;
-    cout << "ID = " << keya.id << ",\nAGE = " << keya.age <<", \nCGPA = " << keya.cgpa ;
+    keya.display();
 
 
 getch();
