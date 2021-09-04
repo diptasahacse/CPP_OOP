@@ -13,18 +13,13 @@ public:
         cgpa = c;
 
     }
-
-    Student(){
-        cout << "This is default Constructor" <<endl << endl;
-
-    }
-    void display();
+    void display(int n);
 
 
 
 };
-void Student :: display(){
-        cout << "ID = " << id << ",\nAGE = " << age <<", \nCGPA = " << cgpa <<endl<<endl;
+void Student :: display(int n){
+        cout << n<< ".\nID = " << id << ",\nAGE = " << age <<", \nCGPA = " << cgpa <<endl<<endl;
 
 }
 
@@ -33,11 +28,11 @@ int main(){
     //dipta details
     cout << "Dipta Details:" <<endl;
     Student dipta(11712644,27,2.5);
-    dipta.display();
+    dipta.display(1);
     //keya details
     cout << "Keya Details:" << endl;
     Student keya(446655,23,3.5);
-    keya.display();
+    keya.display(2);
 
 
 getch();
