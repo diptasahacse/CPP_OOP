@@ -7,24 +7,26 @@ public:
     int id;
     int age;
     double cgpa;
-    Student(int i,int a,double c){
-        id = i;
-        age = a;
-        cgpa = c;
-
-    }
+    Student(int i,int a,double c);
     void display(int n);
 
 
 
 };
+// Constructor definition outside the class
+Student :: Student(int i,int a,double c){
+        id = i;
+        age = a;
+        cgpa = c;
+
+}
+//Method/function definition outside the class
 void Student :: display(int n){
         cout << n<< ".\nID = " << id << ",\nAGE = " << age <<", \nCGPA = " << cgpa <<endl<<endl;
 
 }
 
 int main(){
-    Student def; // initialize obj for default constructor
     //dipta details
     cout << "Dipta Details:" <<endl;
     Student dipta(11712644,27,2.5);
