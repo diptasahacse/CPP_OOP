@@ -4,29 +4,24 @@
 using namespace std;
 class Student{
 public:
-    Student(); //constructor
-    ~Student(); //destructor
-    void display();
+    void display1();
+    void display2();
 
 };
-//constructor definition
-Student :: Student(){
-    cout << "Constructor is called" <<endl;
+void Student :: display1(){
+    cout << "Function is called using normal way" << endl;
 }
 
-//destructor definition
-Student :: ~Student(){
-    cout << "Destructor is called" << endl;
+void Student :: display2(){
+    cout << "Function is called using another way" << endl;
 }
-void Student :: display(){
-    cout << "Function is called" << endl;
-}
-
 
 int main(){
 
 Student s1;
-s1.display();
+s1.display1(); // one way to call the function
+Student *p = &s1;
+p -> display2(); // another way to call the function
 
 
 return 0;
