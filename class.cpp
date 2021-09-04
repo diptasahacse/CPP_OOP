@@ -13,18 +13,20 @@ public:
         cgpa = c;
 
     }
-    void display(){
-        cout << "ID = " << id << ",\nAGE = " << age <<", \nCGPA = " << cgpa <<endl<<endl;
 
-    }
     Student(){
         cout << "This is default Constructor" <<endl << endl;
 
     }
+    void display();
 
 
 
 };
+void Student :: display(){
+        cout << "ID = " << id << ",\nAGE = " << age <<", \nCGPA = " << cgpa <<endl<<endl;
+
+}
 
 int main(){
     Student def; // initialize obj for default constructor
