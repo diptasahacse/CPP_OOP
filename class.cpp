@@ -4,39 +4,30 @@
 using namespace std;
 class Student{
 public:
-    int id;
-    int age;
-    double cgpa;
-    Student(int i,int a,double c);
-    void display(int n);
-
-
+    Student(); //constructor
+    ~Student(); //destructor
+    void display();
 
 };
-// Constructor definition outside the class
-Student :: Student(int i,int a,double c){
-        id = i;
-        age = a;
-        cgpa = c;
-
+//constructor definition
+Student :: Student(){
+    cout << "Constructor is called" <<endl;
 }
-//Method/function definition outside the class
-void Student :: display(int n){
-        cout << n<< ".\nID = " << id << ",\nAGE = " << age <<", \nCGPA = " << cgpa <<endl<<endl;
 
+//destructor definition
+Student :: ~Student(){
+    cout << "Destructor is called" << endl;
 }
+void Student :: display(){
+    cout << "Function is called" << endl;
+}
+
 
 int main(){
-    //dipta details
-    cout << "Dipta Details:" <<endl;
-    Student dipta(11712644,27,2.5);
-    dipta.display(1);
-    //keya details
-    cout << "Keya Details:" << endl;
-    Student keya(446655,23,3.5);
-    keya.display(2);
+
+Student s1;
+s1.display();
 
 
-getch();
 return 0;
 }
